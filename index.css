@@ -1,29 +1,41 @@
 
 *{
-margin: 0;
+/* margin: 0; */
 --gold-color: #EDC441;
+
 
 
 }
 
 .landing-page{
-    /* display: flex; */
+   
     background-color: var(--gold-color);
+    padding-bottom: 50px;
+    max-height: 600px;
     
 }
 /* #EDC441 */
 .introduction{
-    height: 450px;
-    padding: 150px 0px 100px 200px;
+    padding: 100px 0 200px 200px;
+    /* background-color: red; */
 
 }
 .introduction h4{
     color: grey;
 }
+.introduction h2, .introduction h4{
+    font-family: Tangerine;
+    font-size: 4em;
+}
+.introduction h2{
+    font-weight: bold;
 
-.logo img{
+}
+
+.image-me img{
     padding:50px 0px 0px 200px;
-    size: 50px;
+    width: 100px;
+    height: 100px;
 }
 .about-me{
     padding: 50px 0px 50px 200px;
@@ -49,7 +61,7 @@ margin: 0;
     background-color: rgb(151, 149, 149);
     
 }
-.footer form button,.introduction button {
+.footer form button,.introduction button , .resume-button{
     /* margin: 20px 0px 50px 100px; */
     background-color: black;
     color:var(--gold-color);
@@ -57,8 +69,62 @@ margin: 0;
     text-align: center;
     border: none;
     border-radius: 8px;
+    text-decoration: none;
     
 }
 .footer label,.footer label input,.footer label textarea{
     padding: 10px;
 }
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    color: #444;
+    /* overflow-x: hidden; */
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #696060;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
