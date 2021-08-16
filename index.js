@@ -7,16 +7,15 @@ btnResume.addEventListener("mouseout", changeColors);
 function changeColor() {
   btnResume.style.backgroundColor = "white";
   btnResume.style.color = "black";
-
   btnResume.innerHTML("Click me");
-  btnResume.style.transform = "translateX()";
+  
 }
 
 function changeColors() {
   btnResume.style.backgroundColor = "black";
   btnResume.style.color = "#EDC441";
   btnResume.innerHTML("Click me");
-  btnResume.style.transform = "translateX()";
+  
 }
 
 function openNav() {

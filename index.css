@@ -14,11 +14,61 @@
     max-height: 600px;
     
 }
-/* #EDC441 */
-.introduction{
-    padding: 100px 0 200px 200px;
-    /* background-color: red; */
 
+.sidebar {
+    height: auto;
+    padding-bottom: 100px;
+    width: 0;
+    z-index: 1;
+    background-color: #111;
+    color: #444;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    position: absolute;
+    right: 20px;
+    
+
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #696060;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .openbtn {
+    position: absolute;
+    right: 50px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-top: 50px;
+
+    
+  }
+  .nav{
+      font-size: 30px;
+  }
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+ 
+  
+.introduction{
+    padding: 200px 0 200px 200px;
 }
 .introduction h4{
     color: grey;
@@ -31,11 +81,23 @@
     font-weight: bold;
 
 }
+@keyframes example {
+    from {top: 200px;
+        bottom: auto;
+    }
+    to {top: 150px;}
+  }
 
 .image-me img{
-    padding:50px 0px 0px 200px;
-    width: 100px;
-    height: 100px;
+    width:  180px;
+}
+
+.image-me {
+   position: absolute;
+   right: 20px;
+   top: 200px;
+   animation-name: example;
+   animation-duration: 4s;
 }
 .about-me{
     padding: 50px 0px 50px 200px;
@@ -75,50 +137,3 @@
 .footer label,.footer label input,.footer label textarea{
     padding: 10px;
 }
-.sidebar {
-    height: auto;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 100px;
-    background-color: #111;
-    color: #444;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    margin-left: 1000px;
-
-  }
-  
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #696060;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-  
-  .openbtn {
-    margin-left: 1200px;
-    margin-top: 50px;
-    
-  }
-  .sidebar .closebtn {
-    /* position: absolute; */
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  .openbtn:hover {
-    background-color: #444;
-  }
-  
-  
