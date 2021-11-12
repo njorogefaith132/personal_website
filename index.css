@@ -62,10 +62,12 @@
 .introduction span {
   color: grey;
 }
-.introduction h2,
-.introduction span {
+.introduction h2{
   font-family: Tangerine;
   font-size: 4em;
+}
+.introduction span {
+  font-family: Tangerine;
 }
 .introduction h2 {
   font-weight: bold;
