@@ -63,7 +63,7 @@
   color: grey;
 }
 .introduction h2,
-.introduction h4 {
+.introduction span {
   font-family: Tangerine;
   font-size: 4em;
 }
