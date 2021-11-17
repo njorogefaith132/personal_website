@@ -167,7 +167,8 @@ body{
   padding: 10px;
 }
 .footer textarea {
-  resize: vertical;
+  /* resize: vertical; */
+  width: 100px;
 }
 .ph,
 .env,
