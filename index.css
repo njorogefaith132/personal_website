@@ -1,6 +1,9 @@
 * {
   margin: 0;
   --gold-color: #edc441;
+  outline: 1px solid red !important;
+  opacity: 1 !important;
+  visibility: visible !important
 }
 
 body{
@@ -146,8 +149,11 @@ body{
 .footer {
   padding: 50px 0px 50px 200px;
   background-color: rgb(151, 149, 149);
-  display: grid;
-  grid-template-columns: 600px 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .contacts{
+  margin-right: 200px;
 }
 
 .footer form button,
@@ -237,11 +243,12 @@ body{
   } */
   .footer {
     padding: 50px 0px 50px 70px;
-    grid-template-columns: 500px;
-    grid-template-rows: 500px;
+    flex-direction: column;
   }
   .footer .contacts{
     margin-top: 59px;
   }
-
+  .footer .contacts span,.footer .contacts a{
+    width: 250px;
+  }
 }
